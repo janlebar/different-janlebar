@@ -1,5 +1,6 @@
 <script>
 import AboutClientSingle from './AboutClientSingle.vue';
+import img from '@/src/assets/images/brands/logoti.svg';
 
 export default {
 	components: {
@@ -12,7 +13,7 @@ export default {
 				{
 					id: 1,
 					title: 'Logoti',
-					// img: require('@/src/assets/images/brands/logoti.svg'),
+					img: img
 				},
 
 
