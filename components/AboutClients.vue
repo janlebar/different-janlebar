@@ -1,6 +1,11 @@
 <script>
 import AboutClientSingle from './AboutClientSingle.vue';
-import img from '@/src/assets/images/brands/logoti.svg';
+import img from '@/src/assets/images/brands/Vanabemuseum.svg';
+import img2 from '@/src/assets/images/brands/Petrol.svg';
+import img3 from '@/src/assets/images/brands/Mg Msum.svg';
+import img4 from '@/src/assets/images/brands/L internationale.svg';
+import img5 from '@/src/assets/images/brands/BTC.svg';
+
 
 export default {
 	components: {
@@ -12,11 +17,29 @@ export default {
 			clients: [
 				{
 					id: 1,
-					title: 'Logoti',
+					title: 'Vanabemuseum',
 					img: img
 				},
-
-
+				{
+					id: 2,
+					title: 'Petrol',
+					img: img2
+				},
+				{
+					id: 3,
+					title: 'Mg Msum',
+					img: img3
+				},
+				{
+					id: 4,
+					title: 'L internationale',
+					img: img4
+				},
+				{
+					id: 5,
+					title: 'BTC',
+					img: img5
+				},
 
 			],
 		};

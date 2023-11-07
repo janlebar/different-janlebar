@@ -10,9 +10,11 @@ export default {
 			type: Array,
 			default: () => [
 				'Web Application',
-				'UI/UX Design',
+				'UI UX Design',
 				'Branding',
                 'Design',
+				'Book Design',
+				'Animation',
 			],
 		},
 	},
