@@ -4,4 +4,6 @@ export default {
     bootstrapVueCSS: true,
   },
   modules: ['@nuxtjs/tailwindcss'], // Add a comma here
+
 }
+ 

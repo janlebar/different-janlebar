@@ -1,16 +1,15 @@
-import img from './web-project-1.jpg';
+const imageContext = import.meta.globEager('./project-images/*.{jpg,svg}');
 
+const projects = Object.entries(imageContext).map(([imagePath, imageImport]) => {
+  const title = imagePath.replace('./project-images/', '').replace(/\.(jpg|svg)/, '');
 
+  return {
+    id: title,
+    title: title,
+    category: 'Web Application',
+    img: imageImport.default,
+  };
+});
 
-const project= [
-	{
-	  id: 1,
-	  title: 'Sideeffects app',
-	  category: 'Web Application',
-	  img: img,
-	},
-  ];
-  
-  export default project;
-
+export default projects;
 
