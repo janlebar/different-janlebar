@@ -4,7 +4,7 @@ import Header from '~/components/Header.vue';
 import ProjectGallery from '~/components/ProjectGallery.vue';
 import ProjectInfo from '~/components/ProjectInfo.vue';
 import ProjectRelatedProjects from '~/components/ProjectRelatedProjects.vue';
-import data from './projectdata.js';
+// import data from './projectdata.js';
 
 export default {
 	name: 'Projects',
