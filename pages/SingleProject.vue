@@ -155,9 +155,10 @@ export default {
 </script>
 
 <template>
+	<Header/>
 	<div class="container mx-auto mt-10 sm:mt-20">
 		<!-- Project header -->
-		<ProjectHeader :singleProjectHeader="singleProjectHeader" />
+
 
 		<!-- Project gallery -->
 		<ProjectGallery :projectImages="projectImages" />
