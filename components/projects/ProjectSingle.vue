@@ -1,4 +1,6 @@
 <script>
+
+
 export default {
 	props: ['project'],
 };
@@ -6,10 +8,11 @@ export default {
 
 <template>
 	<router-link
-		to="/projects/single-project"
+		to="/SingleProject"
 		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
 		aria-label="Single Project"
 	>
+	
 		<div>
 			<img
 				:src="project.img"
