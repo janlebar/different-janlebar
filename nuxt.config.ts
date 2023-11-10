@@ -3,6 +3,6 @@ export default {
     bootstrapCSS: true,
     bootstrapVueCSS: true,
   },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss'], 
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxt/image'], 
   buildModules: ['@nuxt/content'],
 }

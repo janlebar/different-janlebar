@@ -20,4 +20,6 @@ const projects = Object.entries(imageContext).map(([imagePath, imageImport]) => 
   };
 }).filter(Boolean); // Remove null entries */
 
+const projects 
+
 export default projects;

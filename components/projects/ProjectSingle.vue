@@ -1,9 +1,22 @@
 <script>
+import { filename } from 'pathe/utils';
 
+const glob = import.meta.glob('@/src/assets/images/projects/*.svg', { eager: true });
+
+const images = Object.
+	entries(glob).
+	map(([key, value]) => ({filename: filename(key), image: value.default}));
 
 export default {
 	props: ['project'],
-};
+	computed: {
+		image: ({ project }) => {
+			console.log(images, project.img);
+			return images.find((image) => image.filename == project.img).image;
+		}
+	}
+}
+
 </script>
 
 <template>
@@ -12,10 +25,9 @@ export default {
 		class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
 		aria-label="Single Project"
 	>
-	
 		<div>
 			<img
-				:src="project.img"
+				:src="image"
 				:alt="project.title"
 				class="rounded-t-xl border-none"
 			/>

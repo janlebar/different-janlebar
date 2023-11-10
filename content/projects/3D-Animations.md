@@ -1,6 +1,6 @@
 ---
 title: 3d Animations
-image: 3d-Animation.svg
+image: 3D-Animations
 ---
 
 Content

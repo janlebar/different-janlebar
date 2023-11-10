@@ -8,6 +8,7 @@ import ProjectRelatedProjects from '~/components/ProjectRelatedProjects.vue';
 
 export default {
 	name: 'Projects',
+	props: ['project'],
 	components: {
 		Header,
 		ProjectGallery,
