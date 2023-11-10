@@ -3,7 +3,7 @@ export default {
     bootstrapCSS: true,
     bootstrapVueCSS: true,
   },
-  modules: ['@nuxtjs/tailwindcss'], // Add a comma here
+  modules: ['@nuxt/content','@nuxtjs/tailwindcss'], // Add a comma here
 
 }
  
