@@ -2,19 +2,24 @@
 import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
-import projects from './data/data';
+//import projects from './data/data';
 
 export default {
 	components: { ProjectSingle, ProjectsFilter },
+	props: ['allProjects'],
 	data: () => {
 		return {
-			projects,
 			projectsHeading: 'Projects Portfolio',
 			selectedCategory: '',
 			searchProject: '',
 		};
 	},
 	computed: {
+		projects() {
+			console.log(this.allProjects);
+			return this.allProjects;
+		},
+
 		// Get the filtered projects
 		filteredProjects() {
 			if (this.selectedCategory) {

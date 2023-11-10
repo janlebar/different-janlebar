@@ -1,4 +1,4 @@
-const imageContext = import.meta.globEager('./project-images/*.{jpg,svg}');
+/* const imageContext = import.meta.globEager('./project-images/*.{jpg,svg}');
 
 const projects = Object.entries(imageContext).map(([imagePath, imageImport]) => {
   if (!imagePath) {
@@ -18,6 +18,6 @@ const projects = Object.entries(imageContext).map(([imagePath, imageImport]) => 
     category: categoryWithoutExtension, // Use the extracted category without the extension
     img: imageImport.default,
   };
-}).filter(Boolean); // Remove null entries
+}).filter(Boolean); // Remove null entries */
 
 export default projects;

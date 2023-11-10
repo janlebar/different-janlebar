@@ -1,21 +1,13 @@
-<script>
+<script setup>
 import ProjectsGrid from '/components/projects/ProjectsGrid.vue';
 import Header from '~/components/Header.vue'
 
-export default {
-    components: {
-      Header,
-    },
-	name: 'Projects',
-	components: {
-		ProjectsGrid,
-	},
-};
+const { data: projects } = await useAsyncData('projects', () => queryContent('projects').find());
 </script>
 
 <template>
     <Header />
 	<div class="container mx-auto">
-		<ProjectsGrid />
+		<ProjectsGrid :allProjects="projects" />
 	</div>
 </template>
