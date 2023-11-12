@@ -1,5 +1,5 @@
 ---
-title: My Post Title
+title: Test
 text: ksks
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: My Post Title
-text: ksks
+text: aaaaaaaa
 ---
 
-## hello cd
+## hello scc
 
 this is body

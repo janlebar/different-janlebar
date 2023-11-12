@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <template>
   <main>
     <ContentDoc path="/my-post" />
