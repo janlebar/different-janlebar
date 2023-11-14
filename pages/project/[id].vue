@@ -14,7 +14,7 @@ const path = route.params.id.toLowerCase();
 
     <main>
       <!-- Use route.params.id as the target.md -->
-      <ContentDoc :path="`/projects/${path}`" />
+      <ContentDoc :path="`/singleprojects/${path}`" />
       <!-- <ContentDoc path="/my-post" /> -->
 
     </main>
