@@ -1,12 +1,12 @@
-
-
-## Packaging and Brochure Design
-
-**Client: CANABIOVET**
-
+---
+title: 'Canabiovet'
+description: 'meta description of the page'
+customVariable: 'Packaging and Brochure Design'
+customVariabletwo: Client CANABIOVET
 ---
 
-### Overview
+
+### Description
 
 Welcome to the world of CANABIOVET, where innovative design meets the tranquility of nature. Our packaging and brochure design aim to create a harmonious blend of aesthetics and functionality, catering to the unique needs of our equine companions.
 

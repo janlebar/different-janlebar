@@ -22,7 +22,15 @@ const path = route.params.id.toLowerCase();
       <!-- Use route.params.id as the target.md -->
       <ContentDoc :path="`/singleprojects/${path}`" v-slot="{ doc }">
         <article>
-          <h1 class="text-red-500">{{ doc.title }}</h1>
+          <div class="text-black mt-4">
+            <div class="container mx-auto text-center">
+              <h1 class="text-4xl font-bold">{{ doc.title }}</h1>
+              <!-- Add more elements or text here as needed -->
+            </div>
+          </div>
+        
+          <h3 class="text-red-500"> {{ doc.customVariable }}</h3>
+          <h3 class="text-red-500"> {{ doc.customVariabletwo }}</h3>
 
           <ContentRenderer :value="doc" />
         </article>
