@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
   theme: {
-    extend: {},
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }
-
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        'sans': ['Roboto', 'Arial', 'sans-serif'],
+      },
+    },
+  },
+  variants: {},
+  plugins: [],
+}

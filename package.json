@@ -12,7 +12,9 @@
   "devDependencies": {
     "@nuxt/content": "^2.9.0",
     "@nuxt/devtools": "latest",
-    "@nuxtjs/tailwindcss": "^6.8.1",
+    "@nuxtjs/tailwindcss": "^6.9.4",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.10",
     "nuxt": "^3.8.0",
     "vite-plugin-md": "^0.22.5",
     "vue": "^3.3.7",

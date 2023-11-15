@@ -1,4 +1,5 @@
 ---
+
 title: 'Canabiovet'
 description: 'meta description of the page'
 titletwo: 'About Client'
@@ -12,9 +13,23 @@ objectivetext: 'Objective'
 tools: 'Tools & Technologies'
 toolstext: 'Photoshop, Ilustrator'
 
+image: 'Petrol'
 
 
 ---
+
+
+<!-- ![my image](/img/Petrol.svg) -->
+
+<img class="rounded-full" src="/img/Petrol.svg"/>
+
+## Description
+
+Opis
+
+## Hello
+
+Hello world
 
 
 <!-- 

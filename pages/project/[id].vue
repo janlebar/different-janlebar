@@ -55,6 +55,10 @@ const path = route.params.id.toLowerCase();
 
         </div>
 
+          <!-- <img :src="'~/public/img/${doc.image}.svg'"/> -->
+          <!-- <img :src="`~/img/${parsedMarkdown.image}.svg`" alt="" class="rounded-full" /> -->
+          <img :src="`~/public/img/${doc.image}.svg`" alt="" class="rounded-full" />
+        
           
           <ContentRenderer :value="doc" />
         </article>
@@ -64,8 +68,6 @@ const path = route.params.id.toLowerCase();
   </div>
 
 </template>
-
-
 
 
 
