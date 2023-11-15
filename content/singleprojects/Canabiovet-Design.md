@@ -1,10 +1,32 @@
 ---
 title: 'Canabiovet'
 description: 'meta description of the page'
+titletwo: 'About Client'
 customVariable: 'Packaging and Brochure Design'
-customVariabletwo: Client CANABIOVET
+client: Client CANABIOVET
+services: 'Packaging and Brochure Design'
+website: 'Website: '
+
+objective: 'Objective'
+objectivetext: 'Objective'
+tools: 'Tools & Technologies'
+toolstext: 'Photoshop, Ilustrator'
+
+
+
 ---
 
+
+<!-- 
+Objective
+
+Lorem ipsum.
+
+Tools & Technologies
+
+HTML, CSS, JavaScript, Vue.js, TailwindCSS, AdobeXD
+
+Share This
 
 ### Description
 
@@ -28,16 +50,9 @@ At CANABIOVET, we believe in the power of clean design to create a calming envir
 
 ---
 
-### Client Testimonials
-
-> "CANABIOVET's design not only caught our eye but also made a positive impact on our horses. The clean layout and soothing typography play a crucial role in creating a calming environment."
-
-*- Happy Client*
-
----
-
 ### Conclusion
 
-CANABIOVET is more than just a product; it's an experience. Our packaging and brochure design are crafted with the well-being of horses in mind, ensuring a serene and stress-free interaction. Embrace the tranquility, embrace CANABIOVET.
+CANABIOVET is more than just a product; it's an experience. Our packaging and brochure design are crafted with the well-being of horses in mind, ensuring a serene and stress-free interaction. Embrace the tranquility, embrace CANABIOVET. -->
 
 ---
+
