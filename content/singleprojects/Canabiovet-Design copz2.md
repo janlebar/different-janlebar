@@ -1,30 +1,34 @@
 ---
 
 title: 'Canabiovet'
-image: 
-  - /img/canabiovet/Canabiovet-Design.svg
-  - /img/canabiovet/canabiovet.svg
-  - /img/canabiovet/canabiovet1.svg
+description: 'meta description of the page'
+titletwo: 'About Client'
+customVariable: 'Packaging and Brochure Design'
+client: Client CANABIOVET
+services: 'Packaging and Brochure Design'
+website: 'Website: '
+
+objective: 'Objective'
+objectivetext: 'Objective'
+tools: 'Tools & Technologies'
+toolstext: 'Photoshop, Ilustrator'
+
+image: 'Petrol'
+
+
 ---
 
-<div>
-<!-- <img src="/img/canabiovet/Canabiovet-Design.svg" style="width: 20%"/>
-<img src="/img/canabiovet/canabiovet.svg" width="20%" height="auto"/> -->
-</div>
 
-## Description: Packaging and Brochure Design
+<!-- ![my image](/img/Petrol.svg) -->
 
-## About Client
-Packaging and Brochure Design
-Client CANABIOVET
-Packaging and Brochure Design
-Website: 
+<img class="rounded-full" src="/img/Petrol.svg"/>
 
-## Objective
+## Description
 
-## Tools & Technologies
-Photoshop, Ilustrator
 
+## Hello
+
+Hello world
 
 <style>
 .green {

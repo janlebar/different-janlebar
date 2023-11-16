@@ -69,8 +69,19 @@ body {
 	font-family: 'Roboto-LightItalic';
 }
 
+/* img {
+	@apply py-2;
+  } */
+  
 
-img {
-  @apply py-2;
-}
-
+p {
+	@apply py-2;
+  }
+  
+  h2 {
+	@apply text-2xl;
+  }
+  
+article {
+	@apply py-20;
+  }
