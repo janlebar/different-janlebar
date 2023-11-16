@@ -18,11 +18,12 @@ const path = route.params.id.toLowerCase();
 
     <main>
       <Header/>
-      <ProjectInfo></ProjectInfo>
+      <!-- <ProjectInfo></ProjectInfo> -->
       <!-- Use route.params.id as the target.md -->
-      <ContentDoc  :path="`/singleprojects/${path}`" v-slot="{ doc }">
+      <div class="p-20">
+      <ContentDoc :path="`/singleprojects/${path}`" v-slot="{ doc }">
         <div class="container mx-auto text-center">
-        <h1 class="text-4xl font-bold">{{ doc.title }}</h1>
+        <h1 class="text-4xl font-bold pt-0 p-10">{{ doc.title }}</h1>
         <!-- <img :src="doc.image"/> -->
         
 
@@ -43,6 +44,7 @@ const path = route.params.id.toLowerCase();
           <ContentRenderer :value="doc" />
         </article>
       </ContentDoc>
+    </div>
     </main>
   </div>
 

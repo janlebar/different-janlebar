@@ -2,82 +2,53 @@
 
 title: 'Canabiovet'
 image: 
-  - /img/canabiovet/Canabiovet-Design.svg
-  - /img/canabiovet/canabiovet.svg
   - /img/canabiovet/canabiovet1.svg
+  - /img/canabiovet/canabiovet2.svg
+  - /img/canabiovet/canabiovet3.svg
+  - /img/canabiovet/canabiovet.svg
+  - /img/canabiovet/canabiovet4.svg
 ---
+::card
+## Client CANABIOVET
+<br>
 
-<div>
-<!-- <img src="/img/canabiovet/Canabiovet-Design.svg" style="width: 20%"/>
-<img src="/img/canabiovet/canabiovet.svg" width="20%" height="auto"/> -->
-</div>
-
-## Description: Packaging and Brochure Design
+## Description
+Packaging and Brochure Design
 
 ## About Client
-Packaging and Brochure Design
-Client CANABIOVET
-Packaging and Brochure Design
-Website: 
+The client specializes in the production of nutritional supplements designed to pacify and soothe animals. 
+These supplements are carefully formulated to provide a holistic approach to animal well-being, addressing not only their nutritional needs but also aiming to promote a sense of calm and tranquility. 
+By leveraging a combination of essential nutrients and natural ingredients,
+the client's products contribute to the overall health and emotional balance of animals.
+::
 
-## Objective
+::card
+## Design
+
+- 
+- **Soothing Typography**: Font, carefully chosen for its calming effect, contributes to a stress-free reading experience.
+
+- **Clean Layout**: Design emphasizes a clutter-free layout, allowing for easy navigation and a sense of visual calmness.
+
+- **Natural Color Palette**: Colour palette is gentle on the eyes and promotes a tranquil atmosphere.
+
 
 ## Tools & Technologies
 Photoshop, Ilustrator
+::
 
 
-<style>
-.green {
-    color: green;
-    font-weight:700;
-    font-size: 30px;
-}
-</style>
-
-<div class="green">
-    Markdown css styles
-</div>
-
-
-
-
-
-<!-- 
-Objective
-
-Lorem ipsum.
-
-Tools & Technologies
-
-HTML, CSS, JavaScript, Vue.js, TailwindCSS, AdobeXD
-
-Share This
-
-### Description
-
-Welcome to the world of CANABIOVET, where innovative design meets the tranquility of nature. Our packaging and brochure design aim to create a harmonious blend of aesthetics and functionality, catering to the unique needs of our equine companions.
 
 ---
 
-### Design Philosophy
 
-At CANABIOVET, we believe in the power of clean design to create a calming environment for horses. Our design philosophy revolves around simplicity, functionality, and a touch of elegance. The use of the Tahoma font, with varying weights, reflects our commitment to clarity and readability.
 
----
 
-### Features
+::div5{.w-full .bg-green-200 .pt-4}
+Another way to use it!
+::
 
-- **Soothing Typography**: The Tahoma font, carefully chosen for its calming effect, contributes to a stress-free reading experience.
 
-- **Clean Layout**: Our design emphasizes a clutter-free layout, allowing for easy navigation and a sense of visual calmness.
 
-- **Natural Color Palette**: Inspired by the serene colors of nature, our palette is gentle on the eyes and promotes a tranquil atmosphere.
 
----
-
-### Conclusion
-
-CANABIOVET is more than just a product; it's an experience. Our packaging and brochure design are crafted with the well-being of horses in mind, ensuring a serene and stress-free interaction. Embrace the tranquility, embrace CANABIOVET. -->
-
----
 
