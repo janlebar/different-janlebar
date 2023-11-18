@@ -1,7 +1,6 @@
 ---
-title: Canabiovet package design
+title: Canabiovet-Design
 image: Canabiovet-Design
-description: Package design
 ---
 
 Content
