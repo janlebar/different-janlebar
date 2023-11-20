@@ -44,5 +44,12 @@ export default {
 				>{{ project.category }}</span
 			>
 		</div>
+		<div class="text-center px-4 py-6">
+			<p
+				class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
+			>
+				{{ project.description }}
+			</p>
+		</div>
 	</router-link>
 </template>
