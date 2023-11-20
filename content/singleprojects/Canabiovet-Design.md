@@ -8,6 +8,25 @@ image:
   - /img/canabiovet/canabiovet.svg
   - /img/canabiovet/canabiovet4.svg
 ---
+
+
+| Column 1 | Column 2 |
+|----------|----------|
+| Data 1   | Data 2   |
+| Data 3   | Data 4   |
+
+
+
+::hero
+  :::card
+    A nested card
+    ::card
+      A super nested card
+    ::
+  :::
+::
+
+
 ::card
 ## Client CANABIOVET
 <br>

@@ -9,6 +9,8 @@ const route = useRoute()
 console.log(route.params.id)
 const path = route.params.id.toLowerCase();
 
+
+
 </script>
 
 <template>
@@ -43,9 +45,40 @@ const path = route.params.id.toLowerCase();
         <article class="mx-auto pt-0 p-80">
           <ContentRenderer :value="doc" />
         </article>
+
+
+
+
+
+
+        <div class="flex">
+          <div class="w-1/2">
+            <h1>{{ doc.title }}</h1>
+            <nuxt-content :document="article" />
+          </div>
+          <div class="w-1/2">
+            <!-- Second column content here -->
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
       </ContentDoc>
     </div>
     </main>
   </div>
 
 </template>
+
+
+
+

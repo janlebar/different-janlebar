@@ -95,3 +95,21 @@ div[design] {
 div card {
     @apply pl-8 pl-80 m-8; 
 }
+
+@layer components {
+	.card {
+	  @apply flex flex-wrap bg-white rounded-xl shadow-md overflow-hidden;
+	}
+	.card-column {
+	  @apply w-1/2 p-4;
+	}
+  }
+
+  .card {
+	@apply pl-8 pr-80 m-8; 
+  }
+  
+  th {
+	@apply pl-8 pr-80 m-8; 
+  }
+  
