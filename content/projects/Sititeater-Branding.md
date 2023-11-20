@@ -1,7 +1,7 @@
 ---
+maintitle: Sititeater branding
 title: Sititeater branding
 image: Sititeater-Branding
-description: branding
+description: Design
+category: Design
 ---
-
-Content

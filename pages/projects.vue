@@ -13,6 +13,7 @@ if (value) {
 		title: project.title,
 		description: project.description,
 		img: project.image,	
+		maintitle: project.maintitle
 	}));
 }
 </script>
