@@ -32,6 +32,7 @@ export default {
 				class="rounded-t-xl border-none"
 			/>
 		</div>
+		<!-- TITLE -->
 		<div class="text-center px-4 py-6">
 			<p
 				class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2"
