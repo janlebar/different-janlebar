@@ -51,15 +51,7 @@ const path = route.params.id.toLowerCase();
 
 
 
-        <div class="flex">
-          <div class="w-1/2">
-            <h1>{{ doc.title }}</h1>
-            <nuxt-content :document="article" />
-          </div>
-          <div class="w-1/2">
-            <!-- Second column content here -->
-          </div>
-        </div>
+
 
 
 
