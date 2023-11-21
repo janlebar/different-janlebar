@@ -30,8 +30,9 @@
       </section>
   
       <div class="container mx-auto">
-        <ProjectsGrid :allProjects="projects" />
+        <projects />
       </div>
+
       <!-- Image Section -->
       <section class="image-section">
         <div class="image-grid">
@@ -50,14 +51,31 @@
   
   <script>
   import Header from '~/components/Header.vue'
-  import ProjectsGrid from '/components/projects/ProjectsGrid.vue';
+  import projects from '~/components/Footer.vue';
 
   export default {
     components: {
       Header,
-      ProjectsGrid,
+      projects,
     },
 
   };
+
+
+// const result = await useAsyncData('projects', () => queryContent('projects').find());
+// const value = result.data.value;
+
+// let projects = [];
+
+// if (value) {
+// 	projects = value.map((project) => ({
+// 		id: project._id,
+// 		title: project.title,
+// 		// description: project.description,
+// 		img: project.image,	
+// 		maintitle: project.maintitle,
+// 		category: project.category
+// 	}));
+// }
   </script>
   
