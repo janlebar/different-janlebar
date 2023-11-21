@@ -11,9 +11,10 @@ if (value) {
 	projects = value.map((project) => ({
 		id: project._id,
 		title: project.title,
-		description: project.description,
+		// description: project.description,
 		img: project.image,	
-		maintitle: project.maintitle
+		maintitle: project.maintitle,
+		category: project.category
 	}));
 }
 </script>
