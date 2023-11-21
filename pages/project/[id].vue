@@ -3,6 +3,7 @@ import { useRoute } from 'vue-router'
 import Header from '~/components/Header.vue';
 
 
+
 const route = useRoute()
 
 // When accessing /posts/1, route.params.id will be 1
@@ -42,7 +43,7 @@ const path = route.params.id.toLowerCase();
 
 
         </div>
-        <article class="mx-auto pt-0 p-80">
+        <article class="mx-auto pt-0 pl-80 pr-80">
           <ContentRenderer :value="doc" />
         </article>
 
@@ -66,6 +67,9 @@ const path = route.params.id.toLowerCase();
 
       </ContentDoc>
     </div>
+    <div class="pt-0">
+    <Footerprojects/>
+  </div>
     </main>
   </div>
 
