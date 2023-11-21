@@ -29,7 +29,9 @@
         </div>
       </section>
   
-  
+      <div class="container mx-auto">
+        <ProjectsGrid :allProjects="projects" />
+      </div>
       <!-- Image Section -->
       <section class="image-section">
         <div class="image-grid">
@@ -48,10 +50,12 @@
   
   <script>
   import Header from '~/components/Header.vue'
-  
+  import ProjectsGrid from '/components/projects/ProjectsGrid.vue';
+
   export default {
     components: {
       Header,
+      ProjectsGrid,
     },
 
   };
