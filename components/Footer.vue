@@ -1,5 +1,5 @@
 <script setup>
-import ProjectsGrid from '/components/projects/ProjectsGrid.vue';
+import ProjectsGrid from '/components/projects/ProjectsFooter.vue';
 
 
 const result = await useAsyncData('projects', () => queryContent('projects').find());
