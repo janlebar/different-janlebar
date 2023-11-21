@@ -1,11 +1,11 @@
 <script>
 import feather from 'feather-icons';
-import ProjectsFilter from './ProjectsFilter.vue';
+
 import ProjectSingle from './ProjectSingle.vue';
 //import projects from './data/data';
 
 export default {
-	components: { ProjectSingle, ProjectsFilter },
+	components: { ProjectSingle },
 	props: ['allProjects'],
 	data: () => {
 		return {
@@ -19,6 +19,14 @@ export default {
 			return this.allProjects;
 		},
 
+
+		// Get three random projects
+		randomProjects() {
+			const shuffledProjects = this.projects.slice().sort(() => 0.5 - Math.random());
+			return shuffledProjects.slice(0, 3);
+		},
+
+
 		// Get the filtered projects
 		filteredProjects() {
 			if (this.selectedCategory) {
@@ -29,23 +37,7 @@ export default {
 			return this.projects;
 		},
 	},
-	methods: {
-		// Filter projects by category
-		filterProjectsByCategory() {
-			return this.projects.filter((item) => {
-				let category =
-					item.category.charAt(0).toUpperCase() +
-					item.category.slice(1);
-				console.log(category);
-				return category.includes(this.selectedCategory);
-			});
-		},
-		// Filter projects by title search
-		filterProjectsBySearch() {
-			let project = new RegExp(this.searchProject, 'i');
-			return this.projects.filter((el) => el.title.match(project));
-		},
-	},
+
 	mounted() {
 		feather.replace();
 	},
@@ -67,7 +59,7 @@ export default {
 		>
 		<!-- MAP THROUGH PROJECTS AND DISPLAY THEM -->
 			<ProjectSingle
-				v-for="project in filteredProjects"
+				v-for="project in randomProjects"
 				:key="project.id"
 				:project="project"
 			/>
