@@ -75,7 +75,6 @@ export default {
 	props: ['allProjects'],
 	data: () => {
 		return {
-			projectsHeading: 'Projects Portfolio',
 			selectedCategory: '',
 			searchProject: '',
 		};
@@ -122,14 +121,7 @@ export default {
 <template>
 	<!-- Projects grid -->
 	<section class="pt-10 sm:pt-14">
-		<!-- Projects grid title -->
-		<div class="text-center">
-			<p
-				class="font-general-semibold text-2xl sm:text-5xl font-semibold mb-2 text-ternary-dark dark:text-ternary-light"
-			>
-				{{ projectsHeading }}
-			</p>
-		</div>
+
 
 		<!-- Filter and search projects -->
 		<div class="mt-10 sm:mt-10">
@@ -143,7 +135,7 @@ export default {
 					mb-4
 				"
 			>
-				Search projects by title or filter by category
+				
 			</h3>
 			<div
 				class="
