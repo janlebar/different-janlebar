@@ -8,14 +8,17 @@ const value = result.data.value;
 let projects = [];
 
 if (value) {
-	projects = value.map((project) => ({
-		id: project._id,
-		title: project.title,
-		// description: project.description,
-		img: project.image,	
-		maintitle: project.maintitle,
-		category: project.category
-	}));
+	projects = value.map((project) => {
+		console.log(project.category + 'HERE IN PROJECTS'); // log the category here
+		return {
+			id: project._id,
+			title: project.title,
+			// description: project.description,
+			img: project.image,	
+			maintitle: project.maintitle,
+			category: project.category
+		}
+	});
 }
 </script>
 

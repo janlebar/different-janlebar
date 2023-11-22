@@ -1,5 +1,6 @@
 <script setup>
 import { useRoute } from 'vue-router'
+import { ref, watchEffect } from 'vue';
 import Header from '~/components/Header.vue';
 
 
@@ -10,6 +11,7 @@ const route = useRoute()
 console.log(route.params.id)
 const path = route.params.id.toLowerCase();
 
+console.log('here')
 
 
 </script>
@@ -27,6 +29,7 @@ const path = route.params.id.toLowerCase();
       <ContentDoc :path="`/singleprojects/${path}`" v-slot="{ doc }">
         <div class="container mx-auto text-center">
         <h1 class="text-4xl font-bold pt-0 p-10">{{ doc.title }}</h1>
+        <h1 class="text-4xl font-bold pt-0 p-10">{{ doc.description }}</h1>
         <!-- <img :src="doc.image"/> -->
         
 
@@ -39,30 +42,10 @@ const path = route.params.id.toLowerCase();
         </div>
         
 
-
-
-
         </div>
         <article class="mx-auto pt-0 pl-80 pr-80">
           <ContentRenderer :value="doc" />
         </article>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
       </ContentDoc>
