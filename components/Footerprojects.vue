@@ -5,6 +5,8 @@ import ProjectsGrid from '/components/projects/InsideProjectsFooter.vue';
 const result = await useAsyncData('projects', () => queryContent('projects').find());
 const value = result.data.value;
 
+
+
 let projects = [];
 
 if (value) {

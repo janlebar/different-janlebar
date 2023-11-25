@@ -1,6 +1,7 @@
 ---
 
 title: 'A Republic of Art book design'
+description: 'Design'
 image: 
   - /img/republicofart/republicofart1.svg
   - /img/republicofart/republicofart2.svg
