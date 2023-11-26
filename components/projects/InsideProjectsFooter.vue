@@ -7,14 +7,14 @@ import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
 
 
+
 //import projects from './data/data';
-const test = 'Design'
 export default {
 	components: { ProjectSingle, ProjectsFilter,},
 	props: ['allProjects','category','description'],
-	data: () => {
+	data: ({description}) => {
 		return {
-			FilteredCategory: test,
+			FilteredCategory: description,
 		};
 	},
 	computed: {
@@ -53,9 +53,9 @@ export default {
 
  <template>
 	<!-- Projects grid  -->
-	<section class="pt-10 sm:pt-14">
+	<section class=" ">
 		 <!-- Filter and search projects -->
-		<div class="mt-10 sm:mt-10">
+		<div class=" ">
 
 			<div
 				class="
