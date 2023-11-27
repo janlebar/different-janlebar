@@ -4,7 +4,6 @@ export default {
   },
 
   plugins: [
-    '~/plugins/vimeo-player.js',
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio')
   ],
@@ -20,3 +19,4 @@ module.exports = {
   variants: {},
   plugins: [],
 }
+
