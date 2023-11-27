@@ -16,16 +16,11 @@ export default {
 				'Animation',
 			],
 		},
-		showSelect: {
-			type: Boolean,
-			default: true,
-		},
 	},
 };
 </script>
 
 <template>
-	<div v-if="showSelect">
 	<select
 		@change="$emit('filter', $event.target.value)"
 		:name="select"
@@ -44,7 +39,7 @@ export default {
 				dark:text-ternary-light
 			"
 	>
-		<option v-if="showAllProjectsOption" value class="text-sm sm:text-md">All Projects</option>
+		<option value class="text-sm sm:text-md">All Projects</option>
 		<option
 			v-for="option in selectOptions"
 			:key="option"
@@ -54,5 +49,4 @@ export default {
 			{{ option }}
 		</option>
 	</select>
-</div>
 </template>

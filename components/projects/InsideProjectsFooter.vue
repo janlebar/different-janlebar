@@ -57,20 +57,14 @@ export default {
 		 <!-- Filter and search projects -->
 		<div class=" ">
 
-			<div
-				class="
-					flex
-					justify-between
-					border-b border-primary-light
-					dark:border-secondary-dark
-					pb-3
-					gap-2
-				"
-			>
 
-				<ProjectsFilter @filter="FilteredCategory = $event" />
+
+				<!-- <ProjectsFilter @filter="FilteredCategory = $event" /> -->
+				<ProjectsFilter :showSelect="false" @filter="FilteredCategory = $event"/>
+
+
 			</div>
-		</div>
+
 
 		<!-- Projects grid  -->
 		<div

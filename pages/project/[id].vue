@@ -41,6 +41,8 @@ const path = route.params.id.toLowerCase();
           <h2 class=" mx-auto pt-0 pl-20 pr-80 pt-0">Similar Projects</h2>
           <!-- Pass the description ref to the Footerprojects component -->
           <Footerprojects :description="doc.description" />
+
+
         </div>
       </ContentDoc>
     </main>
