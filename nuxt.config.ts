@@ -8,3 +8,4 @@ export default {
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss', '@nuxt/image'], 
   buildModules: ['@nuxt/content'],
 }
+

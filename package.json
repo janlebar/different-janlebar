@@ -27,6 +27,7 @@
     "feather-icons": "^4.29.1",
     "front-matter": "^4.0.2",
     "markdown-it": "^13.0.2",
-    "tailwind": "^4.0.0"
+    "tailwind": "^4.0.0",
+    "vue-vimeo-player": "^1.1.2"
   }
 }

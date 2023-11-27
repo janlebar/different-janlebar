@@ -5,9 +5,15 @@ import Header from '~/components/Header.vue';
 import { watchEffect } from 'vue';
 import Footerprojects from '~/components/Footerprojects.vue';
 
+
+
+
 const route = useRoute()
 console.log(route.params.id)
 const path = route.params.id.toLowerCase();
+
+
+
 
 </script>
 
@@ -22,8 +28,12 @@ const path = route.params.id.toLowerCase();
             <h1 class="text-4xl font-bold pt-0 p-10">{{ doc.title }}</h1>
             <h3 class="text-4xl font-bold pt-0 p-10">{{ doc.description }}</h3>
 
+
+            
+
             <!-- Assign doc.description to description -->
 
+            
             <div class="flex flex-wrap -mx-2">
               <div v-for="(image, index) in doc.image" :key="index"
                 class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 p-2">
