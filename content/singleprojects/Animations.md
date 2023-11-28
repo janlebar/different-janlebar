@@ -2,13 +2,16 @@
 
 title: 'A Republic of Art book design'
 description: 'Design'
-video: https://vimeo.com/888487453?share=copy
 
 ---
-<br>
+
 
 ## Client Ljubljanske Mlekarne
-<br>
+
+<iframe src="https://player.vimeo.com/video/888487453?h=87a5052332" width="1280" height="1128" frameborder="0" 
+allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+
 
 |  | |
 |----------|----------|
