@@ -20,8 +20,9 @@ const path = route.params.id.toLowerCase();
         <Header />
         <div class="p-4 sm:p-20">
           <div class="container mx-auto text-center">
-            <h1 class="text-2xl sm:text-4xl font-bold pt-0 p-2 sm:p-10">{{ doc.title }}</h1>
-            <h3 class="text-2xl sm:text-4xl font-bold pt-0 p-2 sm:p-10">{{ doc.description }}</h3>
+            <h1 class="text-2xl sm:text-4xl font-bold pt-0 sm:p-10">{{ doc.title }}</h1>
+            <h3 class="text-2xl sm:text-4xl pt-0 ">{{ doc.description }}</h3>
+            <br>
             <!-- <client-only>
               <vimeo-player ref="player" :video-id="vimeoId" />
             </client-only>	 -->

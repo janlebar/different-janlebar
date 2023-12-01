@@ -118,10 +118,10 @@ div card {
   } */
 
   iframe {
-	@apply w-full;
+	@apply w-full w-full;
   } 
 
   player{
-	@apply w-full;
+	@apply h-full;
   }
   
