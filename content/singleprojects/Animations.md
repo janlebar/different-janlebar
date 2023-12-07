@@ -1,16 +1,16 @@
 ---
-description: Design
-title: 'Canabiovet'
+description: 'Animation'
+title: '3D Animation'
 image: 
-  - /img/canabiovet/canabiovet1.svg
-  - /img/canabiovet/canabiovet2.svg
-  - /img/canabiovet/canabiovet3.svg
-  - /img/canabiovet/canabiovet.svg
-  - /img/canabiovet/canabiovet4.svg
----
-<br>
+  - /img/ljubljanskemlekarne/1.svg
+  - /img/ljubljanskemlekarne/2.svg
+  - /img/ljubljanskemlekarne/3.svg
+  - /img/ljubljanskemlekarne/4.svg
+  - /img/ljubljanskemlekarne/5.svg
 
-## Client CANABIOVET
+---
+
+## Client Van Abbemuseum
 <br>
 
 |  | |
