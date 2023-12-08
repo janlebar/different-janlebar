@@ -1,6 +1,6 @@
 ---
 maintitle: Sideeffects
-title: Sideeffects web application
+title: Sideeffects
 image: Sideeffects-Web Application
 description: Application development
 category: Application development
