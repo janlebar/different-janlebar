@@ -1,4 +1,34 @@
+<script>
+import Header from '~/components/Header.vue'
+import projects from '~/components/Footer.vue';
+import Footerprojects from '~/components/Footerprojects.vue';
 
+export default {
+  components: {
+    Header,
+    projects,
+    Footerprojects,
+  },
+
+};
+
+
+// const result = await useAsyncData('projects', () => queryContent('projects').find());
+// const value = result.data.value;
+
+// let projects = [];
+
+// if (value) {
+// 	projects = value.map((project) => ({
+// 		id: project._id,
+// 		title: project.title,
+// 		// description: project.description,
+// 		img: project.image,	
+// 		maintitle: project.maintitle,
+// 		category: project.category
+// 	}));
+// }
+</script>
 
 <template>
 
@@ -11,8 +41,8 @@
       <!-- Hero Section -->
       <section class="hero custom-red-background p-12">
         <div class="hero-content text-center">
-          <h1 class="text-3xl sm:text-5xl font-bold text-blue-600">Welcome to Your Website</h1>
-          <p class="text-lg sm:text-xl text-gray-600 mt-4">Your catchphrase or description goes here.</p>
+          <h1 class="text-3xl sm:text-5xl font-bold text-blue-600">Welcome to Different</h1>
+          <p class="text-lg sm:text-xl text-gray-600 mt-4">With Your idea and mz skills lets make things happen.</p>
           <a href="#contact" class="btn inline-block mt-6 py-2 px-4 bg-indigo-500 hover:bg-indigo-700 text-white font-semibold rounded-lg transition duration-300 ease-in-out">Contact Us</a>
         </div>
   
@@ -27,8 +57,17 @@
             <span class="text-sm sm:text-lg font-general-medium duration-100">Download CV</span>
           </a>
         </div>
+
       </section>
-  
+      <Footerprojects />
+      <section>
+
+
+      </section>
+
+
+
+
       <div class="container mx-auto">
         <projects />
       </div>
@@ -49,33 +88,5 @@
     </div>
   </template>
   
-  <script>
-  import Header from '~/components/Header.vue'
-  import projects from '~/components/Footer.vue';
 
-  export default {
-    components: {
-      Header,
-      projects,
-    },
-
-  };
-
-
-// const result = await useAsyncData('projects', () => queryContent('projects').find());
-// const value = result.data.value;
-
-// let projects = [];
-
-// if (value) {
-// 	projects = value.map((project) => ({
-// 		id: project._id,
-// 		title: project.title,
-// 		// description: project.description,
-// 		img: project.image,	
-// 		maintitle: project.maintitle,
-// 		category: project.category
-// 	}));
-// }
-  </script>
   

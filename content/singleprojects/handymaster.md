@@ -16,12 +16,12 @@ image:
 |  | |
 |--|----------|
 | **O Aplikaciji** | **Stack** |
-|Aplikacija je namenjena za povezavo med iskalci izvajalcev, kjer iskalec poda ponudbo, na katero se izvajalec lahko prijavi Dostop do aplikacijo lahko najdete na povezavi spodaj. Aplikacija je dostopna na spodnji povezavi.|React Next.js|
-||Web scraping: cheerio knjižnica|
-||Chart: Chart.js|
+|Aplikacija je namenjena za povezavo med iskalci izvajalcev, kjer iskalec poda ponudbo, na katero se izvajalec lahko prijavi. Dostop do aplikacije lahko najdete na povezavi spodaj.|Python Flask|
+||ORM: SQLAlchemy|
+||Database: PostgreSQL|
 ||CSS: Tailwind|
-||AI: Lama2|
-||Platform: Vercel|
+||Security: uuid4 for database and Itisdangerous sor specific routes|
+||Platform: Fly.io |
 
 |  | |
 |----------|----------|
