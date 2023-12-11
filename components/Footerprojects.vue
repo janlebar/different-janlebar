@@ -5,7 +5,7 @@ import ProjectsGrid from '/components/projects/InsideProjectsFooter.vue';
 const result = await useAsyncData('projects', () => queryContent('projects').find());
 const value = result.data.value;
 
-const {description} = defineProps(['description']);
+const { description, selectedCategory } = defineProps(['description', 'selectedCategory']);
 
 let projects = [];
 

@@ -3,31 +3,21 @@ import Header from '~/components/Header.vue'
 import projects from '~/components/Footer.vue';
 import Footerprojects from '~/components/Footerprojects.vue';
 
+
+
 export default {
   components: {
     Header,
     projects,
     Footerprojects,
   },
-
+  data() {
+    return {
+      selectedCategory: 'Application development', 
+    };
+  },
 };
 
-
-// const result = await useAsyncData('projects', () => queryContent('projects').find());
-// const value = result.data.value;
-
-// let projects = [];
-
-// if (value) {
-// 	projects = value.map((project) => ({
-// 		id: project._id,
-// 		title: project.title,
-// 		// description: project.description,
-// 		img: project.image,	
-// 		maintitle: project.maintitle,
-// 		category: project.category
-// 	}));
-// }
 </script>
 
 <template>
@@ -59,7 +49,7 @@ export default {
         </div>
 
       </section>
-      <Footerprojects />
+      <Footerprojects :selectedCategory="selectedCategory" />
       <section>
 
 
