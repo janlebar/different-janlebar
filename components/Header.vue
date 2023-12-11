@@ -8,19 +8,19 @@
 
           <li><nuxt-link
             to="/projects"
-            class="block text-xl text-indigo-500 text-left text-lg text-primary-dark dark:text-ternary-light hover:text-indigo-900 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+            class="block text-3xl font-bold text-blue-500 text-left text-lg text-primary-dark dark:text-ternary-light hover:text-indigo-900 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
             aria-label="Home"
             >Projects</nuxt-link>
           </li>
           <li><nuxt-link
             to="/about"
-            class="block text-xl text-indigo-500 text-left text-lg text-primary-dark dark:text-ternary-light hover:text-indigo-900 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+            class="block text-3xl font-bold text-blue-500 text-left text-lg text-primary-dark dark:text-ternary-light hover:text-indigo-900 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
             aria-label="About Me"
             >About Me</nuxt-link>
           </li>
           <li><nuxt-link
             to="/contact"
-            class="block text-xl text-indigo-500 text-left text-lg text-primary-dark dark:text-ternary-light hover:text-indigo-900 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+            class="block text-3xl font-bold text-blue-500 text-left text-lg text-primary-dark dark:text-ternary-light hover:text-indigo-900 sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
             aria-label="Contact"
             >Contact</nuxt-link>
           </li>

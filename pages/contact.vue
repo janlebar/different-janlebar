@@ -5,7 +5,7 @@
     <section id="contact" class="contact-section p-8">
       <div class="max-w-md mx-auto">
         <div class="bg-white rounded-lg shadow-lg p-8">
-          <h2 class="text-3xl font-bold text-blue-600 mb-4">Contact Us</h2>
+          <h2 class="text-3xl font-bold text-blue-600 mb-4">Contact me</h2>
           <form @submit.prevent="submitForm">
         <div class="mb-4">
           <label for="name" class="block text-lg text-gray-600">Name</label>
@@ -19,7 +19,7 @@
           <label for="message" class="block text-lg text-gray-600">Message</label>
           <textarea id="message" v-model="formData.message" rows="4" required class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
         </div>
-            <button type="submit" class="bg-indigo-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out">Submit</button>
+            <button type="submit" class="bg-blue-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out">Submit</button>
           </form>
         </div>
       </div>

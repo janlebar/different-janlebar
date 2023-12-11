@@ -30,6 +30,13 @@ export default {
   
     </div>
   
+
+
+
+
+
+
+    
     <div>
       <!-- Hero Section -->
       <section class="hero custom-red-background p-12">
@@ -37,28 +44,36 @@ export default {
           <h1 class="text-3xl sm:text-5xl font-bold text-blue-600">Welcome to Different</h1>
           <p class="text-lg sm:text-xl text-gray-600 mt-4">With Your idea and my skills lets make things happen.</p>
 
-        <div class="btn inline-block mt-6 py-2 px-4 bg-indigo-500 hover:bg-indigo-700 text-white font-semibold rounded-lg transition duration-300 ease-in-out">
-        
-          <nuxt-link to="/contact">Contact</nuxt-link>
-        </div>
+
         </div>
   
 
-
+        <p
+        class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400"
+      >
+        A Full-Stack Developer & Designer
+      </p>
+    
       </section>
       
       <div class="container mx-auto">
         <Footerprojects :customClass="customClassFromParent" :description="description" />
       </div>      
       <section>
+        <div class="container mx-auto flex items-center justify-center h-full">
+          <div class="btn inline-block mt-6 py-2 px-4 bg-blue-500 hover:bg-indigo-700 text-white font-semibold rounded-lg transition duration-300 ease-in-out">
+            <nuxt-link to="/contact">Contact me for Web aplication development</nuxt-link>
+          </div>
+        </div>
+      </section>
+      
       
 
-      </section>
 
 
 
-
-      <div class="container mx-auto">
+      <div class="container mx-auto pt-20">
+        <p class="text-lg font-semibold sm:text-xl text-gray-600 mt-4">Presenting three random projects:</p>
         <projects />
       </div>
 
