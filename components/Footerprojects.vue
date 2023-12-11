@@ -5,7 +5,7 @@ import ProjectsGrid from '/components/projects/InsideProjectsFooter.vue';
 const result = await useAsyncData('projects', () => queryContent('projects').find());
 const value = result.data.value;
 
-const { description, selectedCategory } = defineProps(['description', 'selectedCategory']);
+const { description, selectedCategory,customClass } = defineProps(['description', 'selectedCategory','customClass']);
 
 let projects = [];
 
@@ -23,6 +23,6 @@ if (value) {
 
 <template>
 	<div class="container mx-auto">
-		<ProjectsGrid :allProjects="projects" :description="description" />
+		<ProjectsGrid :allProjects="projects" :description="description" :customClass="customClass" />
 	</div>
 </template>

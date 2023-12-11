@@ -13,10 +13,13 @@ export default {
   },
   data() {
     return {
-      description: 'Application development', 
+      description: 'Application development',
+      customClassFromParent: 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10', 
     };
   },
 };
+
+
 
 </script>
 
@@ -49,9 +52,12 @@ export default {
         </div>
 
       </section>
-      <Footerprojects :description="description" />
+      
+      <div class="container mx-auto">
+        <Footerprojects :customClass="customClassFromParent" :description="description" />
+      </div>      
       <section>
-
+      
 
       </section>
 
