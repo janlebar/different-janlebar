@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      selectedCategory: 'Application development', 
+      description: 'Application development', 
     };
   },
 };
@@ -49,7 +49,7 @@ export default {
         </div>
 
       </section>
-      <Footerprojects :selectedCategory="selectedCategory" />
+      <Footerprojects :description="description" />
       <section>
 
 
