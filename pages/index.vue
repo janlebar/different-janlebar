@@ -2,7 +2,7 @@
 import Header from '~/components/Header.vue'
 import projects from '~/components/Footer.vue';
 import Footerprojects from '~/components/Footerprojects.vue';
-
+// import Indeximageload from '~/components/Indeximageload.vue'
 
 
 export default {
@@ -43,17 +43,17 @@ export default {
         <div class="hero-content text-center">
           <h1 class="text-3xl sm:text-5xl font-bold text-blue-600">Welcome to Different</h1>
           <p class="text-lg sm:text-xl text-gray-600 mt-4">With Your idea and my skills lets make things happen.</p>
-
+          <!-- <Indeximageload></Indeximageload> -->
 
         </div>
   
-
+<!-- 
         <p
         class="font-general-medium mt-2 text-lg sm:text-xl  xl:text-2xl text-center sm:text-left leading-none text-gray-400"
       >
         A Full-Stack Developer & Designer
       </p>
-    
+       -->
       </section>
       
       <div class="container mx-auto">

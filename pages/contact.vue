@@ -29,7 +29,8 @@
 
 <script>
 import Header from '@/components/Header.vue'
-
+import Vue from 'vue';
+import config from '@/config';
 
 
 
@@ -46,8 +47,9 @@ import Header from '@/components/Header.vue'
   },
   methods: {
     submitForm() {
+      
       // Create a mailto link with the specified email address and form data
-      const mailtoLink = `mailto:email@gmail.com?subject=${encodeURIComponent('Contact Form Submission')}&body=${encodeURIComponent(`Name: ${this.formData.name}\nEmail: ${this.formData.email}\nMessage: ${this.formData.message}`)}`;
+      const mailtoLink = `mailto:${config.email}?subject=${encodeURIComponent('Contact Form Submission')}&body=${encodeURIComponent(`Name: ${this.formData.name}\nEmail: ${this.formData.email}\nMessage: ${this.formData.message}`)}`;
 
       // Open the default mail client with the mailto link
       window.open(mailtoLink);
