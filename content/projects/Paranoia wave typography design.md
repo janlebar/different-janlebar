@@ -1,7 +1,7 @@
 ---
-maintitle: Paranoia wave
-title: Paranoia wave typography design
+maintitle: Paranoia Wave
+title: paranoiawave
 image: Paranoia wave-Typography design
-description: Typography design
-category: Typography design
+description: Design
+category: Design
 ---

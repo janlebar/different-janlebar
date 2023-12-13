@@ -1,8 +1,8 @@
 ---
 maintitle: Paranoia
-title: Paranoia typography design
+title: paranoia
 image: Paranoia-Typography design
-description: Typography design
-category: Typography design
+description: Design
+category: Design 
 ---
 
