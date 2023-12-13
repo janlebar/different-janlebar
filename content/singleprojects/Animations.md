@@ -1,29 +1,33 @@
 ---
 description: 'Animation'
-title: '3D Animation'
+title: 'Advertisement'
 image: 
-  - /img/ljubljanskemlekarne/1.svg
-  - /img/ljubljanskemlekarne/2.svg
-  - /img/ljubljanskemlekarne/3.svg
-  - /img/ljubljanskemlekarne/4.svg
-  - /img/ljubljanskemlekarne/5.svg
-
+  - /img/animation/blender1.svg
+  - /img/animation/blender3.svg
 ---
+<style>
+  body {
+    font-size: larger;
+  }
+</style>
 
-## Client Van Abbemuseum
-<br>
+<iframe src="https://player.vimeo.com/video/894085400?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="1080" frameborder="0" 
+  class="w-full sm:h-720 md:h-800 lg:h-1080"  
+  allow="autoplay; fullscreen" allowfullscreen>
+</iframe>
 
 |  | |
 |----------|----------|
-| **Design**   | **Description** |
-| **Typography** Font, carefully chosen for its calming effect, contributes to a stress-free reading experience. | The client specializes in the production of nutritional supplements designed to pacify and soothe animals. These supplements are carefully formulated to provide a holistic approach to animal well-being, addressing not only their nutritional needs but also aiming to promote a sense of calm and tranquility. By leveraging a combination of essential nutrients and natural ingredients, the client's products contribute to the overall health and emotional balance of animals. |
+| | **Description** |
+| **Animation** Simple animation of helmet and company brands over the edited video. |   The client specializes in selling motorcycle equipement. |
 | |  |
-| **Clean Layout**: Design emphasizes a clutter-free layout, allowing for easy navigation and a sense of visual calmness.   |  |
+| **Layout**: The incorporated advertisment was done to the clients specification.   |  |
 | |  |
 |  |
 | |  |
 |
-| **Natural Color Palette**: Colour palette is gentle on the eyes and promotes a tranquil atmosphere.   | **Tools & Technologies** Photoshop, Ilustrator |
+|  | **Tools & Technologies** Blender |
+
 
 ---
 
