@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <div class="box" @mouseover="hoverImage(1)" @mouseout="resetImage(1)">
-      <img v-show="showLeftImage" src="/img/canabiovet/canabiovet1.svg" alt="Left Image" />
-      <span>CSS</span>
+      <img v-show="showLeftImage" src="/img/different/face3.svg" alt="Left Image" />
+      <span>DESIGNER</span>
     </div>
     <div class="box" @mouseover="hoverImage(2)" @mouseout="resetImage(2)">
-      <img v-show="showRightImage" src="/img/canabiovet/canabiovet2.svg" alt="Right Image" />
-      <span>Image</span>
+      <img v-show="showRightImage" src="/img/different/face.svg" alt="Right Image" />
+      <span>DEVELOPER</span>
     </div>
   </div>
 </template>
@@ -41,17 +41,17 @@ export default {
 <style>
 .container {
   display: flex;
-  width: 100%;
-  padding: 4% 2%;
+  width: 150%;
+  padding: 10% 10%;
   box-sizing: border-box;
   height: 100vh;
 }
 
 .box {
   flex: 1;
-  overflow: hidden;
-  transition: 0.5s;
+  transition: 3s;
   line-height: 0;
+  position: relative;
 }
 
 .box > img {
@@ -59,7 +59,10 @@ export default {
   height: calc(100% - 10vh);
   object-fit: cover;
   transition: 0.5s;
-  display: block; /* Ensure the image is initially displayed */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 100px; /* Adjust left or right position here */
 }
 
 .box > span {
@@ -70,17 +73,16 @@ export default {
   line-height: 2.6;
 }
 
-.box:not(:hover) > img {
-  display: none; /* Hide the image when not hovered */
-}
-
 .box:hover {
-  flex: 1 1 50%;
+  flex: 1 5 90%;
+  z-index: 1;
 }
 
 .box:hover > img {
   width: 100%;
   height: 100%;
+  z-index: 2;
+  left: 100px; /* Adjust left or right position here */
 }
 </style>
 
