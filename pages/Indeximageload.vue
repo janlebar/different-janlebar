@@ -1,17 +1,13 @@
 <template>
-  <div class="image-container">
-    <img
-      v-if="showLeftImage"
-      class="left-image"
-      src="/img/canabiovet/canabiovet1.svg"
-      alt="Left Image"
-    />
-    <img
-      v-if="showRightImage"
-      class="right-image"
-      src="/img/canabiovet/canabiovet2.svg"
-      alt="Right Image"
-    />
+  <div class="container">
+    <div class="box" @mouseover="hoverImage(1)" @mouseout="resetImage(1)">
+      <img v-show="showLeftImage" src="/img/canabiovet/canabiovet1.svg" alt="Left Image" />
+      <span>CSS</span>
+    </div>
+    <div class="box" @mouseover="hoverImage(2)" @mouseout="resetImage(2)">
+      <img v-show="showRightImage" src="/img/canabiovet/canabiovet2.svg" alt="Right Image" />
+      <span>Image</span>
+    </div>
   </div>
 </template>
 
@@ -23,39 +19,78 @@ export default {
       showRightImage: false,
     };
   },
-  mounted() {
-    // Use a timeout to stagger the appearance of the images
-    setTimeout(() => {
-      this.showLeftImage = true;
-    }, 500);
-
-    setTimeout(() => {
-      this.showRightImage = true;
-    }, 500);
+  methods: {
+    hoverImage(imageNumber) {
+      if (imageNumber === 1) {
+        this.showLeftImage = true;
+      } else if (imageNumber === 2) {
+        this.showRightImage = true;
+      }
+    },
+    resetImage(imageNumber) {
+      if (imageNumber === 1) {
+        this.showLeftImage = false;
+      } else if (imageNumber === 2) {
+        this.showRightImage = false;
+      }
+    },
   },
 };
 </script>
 
 <style>
-.image-container {
-  position: relative;
+.container {
+  display: flex;
   width: 100%;
-  height: 100vh; /* Adjust this to fit your design */
-  overflow: hidden; /* Clip the images outside the container */
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 100vh;
 }
 
-.left-image,
-.right-image {
-  position: absolute;
-  width: 25%;
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  line-height: 0;
+}
+
+.box > img {
+  width: 200%;
+  height: calc(100% - 10vh);
+  object-fit: cover;
+  transition: 0.5s;
+  display: block; /* Ensure the image is initially displayed */
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:not(:hover) > img {
+  display: none; /* Hide the image when not hovered */
+}
+
+.box:hover {
+  flex: 1 1 50%;
+}
+
+.box:hover > img {
+  width: 100%;
   height: 100%;
-  top: 0;
-}
-
-.right-image {
-  right: 0;
 }
 </style>
+
+
+
+
+
+
+
+
 
   
   
