@@ -1,10 +1,12 @@
 <template>
-  <div class="flex items-center justify-center h-screen">
-    <img
-      src="/img/different/face7.svg"
-      alt="Face Image"
-      class="h-1/2 -translate-y-1/2"
-    />
+  <div class="relative">
+    <div class="absolute inset-0">
+      <img src="/img/different/face7.svg" />
+    </div>
+
+    <div class="absolute inset-0">
+      <img src="/img/different/face5.svg" />
+    </div>
   </div>
 </template>
 
@@ -13,6 +15,10 @@ export default {
   name: 'MyComponent',
 };
 </script>
+
+<style scoped>
+/* You can also add additional styling here if needed */
+</style>
 
 
 
