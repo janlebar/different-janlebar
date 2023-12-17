@@ -1,12 +1,20 @@
 <template>
   <div class="relative">
-    <div class="absolute inset-0">
-      <img src="/img/different/face7.svg" />
-    </div>
 
     <div class="absolute inset-0">
-      <img src="/img/different/face5.svg" />
+      <img src="/img/different/face4.svg" />
+  </div>
+
+    <div class="absolute inset-0 group">
+      <img
+        src="/img/different/face7.svg"
+        class="transition-opacity duration-500 ease-in-out opacity-100 hover:opacity-0"
+        alt="Face 7"
+      />
     </div>
+
+
+
   </div>
 </template>
 
@@ -21,10 +29,3 @@ export default {
 </style>
 
 
-
-
-
-
-
-  
-  
