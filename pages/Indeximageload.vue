@@ -1,21 +1,16 @@
 <template>
-  <div class="relative">
 
-    <div class="absolute inset-0">
-      <img src="/img/different/face4.svg" />
-  </div>
-
-    <div class="absolute inset-0 group">
-      <img
-        src="/img/different/face7.svg"
-        class="transition-opacity duration-500 ease-in-out opacity-100 hover:opacity-0"
-        alt="Face 7"
-      />
+  <div class="container">
+    <div class="imagecontainer">
+      <img class="image" src="/img/different/face7.svg"  />
     </div>
 
-
-
+    <div class="imagecontainer">
+      <img class="image" src="/img/different/face5.svg" />
+    </div>
   </div>
+
+  
 </template>
 
 <script>
@@ -24,8 +19,19 @@ export default {
 };
 </script>
 
-<style scoped>
-/* You can also add additional styling here if needed */
-</style>
+<style>
 
+
+.imagecontainer {
+  position: absolute;
+  inset: 0;
+}
+
+.image {
+
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+</style>
 
