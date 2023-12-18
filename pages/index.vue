@@ -43,7 +43,7 @@ export default {
         <div class="hero-content text-center">
           <h1 class="text-3xl sm:text-5xl font-bold text-blue-600">Welcome to Different</h1>
           <p class="text-lg sm:text-xl text-gray-600 mt-4">With Your idea and my skills lets make things happen.</p>
-          <Indeximageload></Indeximageload>
+          
 
         </div>
   
@@ -55,6 +55,11 @@ export default {
       </p>
        -->
       </section>
+
+      <section>
+        <Indeximageload></Indeximageload>
+    </section>
+    
       
       <div class="container mx-auto">
         <Footerprojects :customClass="customClassFromParent" :description="description" />

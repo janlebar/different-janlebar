@@ -1,37 +1,134 @@
 <template>
-
   <div class="container">
-    <div class="imagecontainer">
-      <img class="image" src="/img/different/face7.svg"  />
+    <div class="container__image" :class="{ 'start-animation': animateOnLoad }">
+      <div class="containerinfoa container__author">DEVELOPER</div>
+      <div class="containerinfob container__location">DESIGNER</div>
     </div>
-
-    <div class="imagecontainer">
-      <img class="image" src="/img/different/face5.svg" />
-    </div>
+    <div class="container__image--second"></div>
   </div>
-
-  
 </template>
 
 <script>
 export default {
   name: 'MyComponent',
+  data() {
+    return {
+      animateOnLoad: null,
+      imageUrls: ["/img/different/face7.svg", "/img/different/face5.svg"], // Add more URLs as needed
+    };
+  },
+  mounted() {
+    // Trigger animation on page load
+    this.animateOnLoad = 0; // Start with the first image index
+
+    // After a delay, reset the animation to allow hover interaction
+    setTimeout(() => {
+      this.animateOnLoad = null;
+    }, 5000); // Adjust the delay as needed
+  },
 };
 </script>
 
 <style>
-
-
-.imagecontainer {
-  position: absolute;
-  inset: 0;
+* {
+  box-sizing: border-box;
 }
 
-.image {
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: #f4f6f8;
+}
 
-  width: 50%;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
-  object-fit: cover;
+  width: 100%;
+  overflow: hidden;
 }
+
+.container__image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: url("/img/different/face7.svg") center/cover;
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: inherit;
+    background-position: bottom;
+    filter: blur(40px) saturate(0%);
+    transform: scaleX(0.4);
+    transition: ease-in-out 0.4s;
+    border-radius: 120px;
+    transform-origin: right;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .containerinfoa {
+    position: relative;
+    line-height: 1.8;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+  }
+  .containerinfob {
+    position: relative;
+    line-height: 1.8;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+  }
+
+  .container__location {
+    transition-delay: 0.15s;
+  }
+
+  &:hover {
+    border-radius: 0;
+    width: 450px;
+    height: 310px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(9, 55, 53, 0.08),
+      0 16px 24px rgba(9, 55, 53, 0.1), 0 24px 32px rgba(9, 55, 53, 0.14);
+
+    &:before {
+      width: 100%;
+      opacity: 0.18;
+      filter: blur(10px) saturate(100%);
+      transform: scale(2.8) translate3d(-18%, 0, 0);
+    }
+
+    .containerinfoa {
+      transform: translate3d(80%, 0, 0);
+      opacity: 1;
+    }
+    .containerinfob {
+      transform: translate3d(10%, 0, 0);
+      opacity: 1;
+    }
+  }
+}
+
+
 </style>
+
 
