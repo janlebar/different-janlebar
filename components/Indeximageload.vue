@@ -43,7 +43,7 @@ export default {
   height: 90vh;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  background-color: #f4f6f8;
+
 
 }
 
@@ -79,7 +79,7 @@ export default {
     margin: auto;
     background: inherit;
     background-position: bottom;
-    filter: blur(40px) saturate(0%);
+
     transform: scaleX(0.4);
     transition: ease-in-out 0.4s;
     border-radius: 120px;

@@ -14,20 +14,45 @@ export default {
   data() {
     return {
       animateOnLoad: null,
-      imageUrls: ["/img/different/face7.svg", "/img/different/face5.svg"], // Add more URLs as needed
+      imageUrls: ["/img/different/face7.svg", "/img/different/face5.svg"],
+      currentImageIndex: 0,
     };
   },
   mounted() {
-    // Trigger animation on page load
-    this.animateOnLoad = 0; // Start with the first image index
+    this.animateOnLoad = true;
 
     // After a delay, reset the animation to allow hover interaction
     setTimeout(() => {
       this.animateOnLoad = null;
-    }, 5000); // Adjust the delay as needed
+    }, 5000);
+
+    // Initialize the computed property by setting the initial value
+    this.currentImageIndex = (this.currentImageIndex + 1) % this.imageUrls.length;
+
+    // Interval to switch images
+    setInterval(() => {
+      console.log(this.currentImageIndex);
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.imageUrls.length;
+    }, 3000); // Adjust the interval as needed
   },
+  watch: {
+    currentImageUrl() {
+      console.log(this.currentImageIndex);
+      return this.imageUrls[this.currentImageIndex];
+    },
+  },
+  // watch: {
+  //   currentImageIndex(newIndex) {
+  //     // You can perform additional logic here if needed
+  //     console.log("currentImageIndex changed:", newIndex);
+  //   },
+  // },
 };
 </script>
+
+
+
+
 
 <style>
 * {
@@ -42,7 +67,7 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  background-color: #f4f6f8;
+  background-color: #ffffff;
 }
 
 .container {
@@ -62,7 +87,7 @@ body {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: url("/img/different/face7.svg") center/cover;
+  background: url("{{ currentImageUrl }}") center/cover;
   transition: ease-in-out 0.3s;
   z-index: 2;
 
