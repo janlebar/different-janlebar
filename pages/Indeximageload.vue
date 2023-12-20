@@ -1,7 +1,7 @@
-<template>
+<!-- <template>
   <div class="container">
     <div class="container__image" :class="{ 'start-animation': animateOnLoad }">
-      <div class="containerinfoa container__author">DEVELOPER</div>
+        <div class="containerinfoa container__author">DEVELOPER</div>
       <div class="containerinfob container__location">DESIGNER</div>
     </div>
     <div class="container__image--second"></div>
@@ -31,7 +31,7 @@ export default {
 
     // Interval to switch images
     setInterval(() => {
-      console.log(this.currentImageIndex);
+      // console.log(this.currentImageIndex);
       this.currentImageIndex = (this.currentImageIndex + 1) % this.imageUrls.length;
     }, 3000); // Adjust the interval as needed
   },
@@ -41,14 +41,14 @@ export default {
       return this.imageUrls[this.currentImageIndex];
     },
   },
-  // watch: {
-  //   currentImageIndex(newIndex) {
-  //     // You can perform additional logic here if needed
-  //     console.log("currentImageIndex changed:", newIndex);
-  //   },
-  // },
+  watch: {
+    currentImageIndex(newIndex) {
+      // You can perform additional logic here if needed
+      console.log("currentImageIndex changed:", newIndex);
+    },
+  },
 };
-</script>
+</script>-->
 
 
 
@@ -154,6 +154,53 @@ body {
 }
 
 
-</style>
+</style> 
 
+
+<template>
+  <div class="container">
+    <div class="container__image" :class="{ 'start-animation': animateOnLoad }" :style="{ background: 'url(' + currentImageUrl + ') center/cover' }">
+      <div class="containerinfoa container__author">DEVELOPER</div>
+      <div class="containerinfob container__location">DESIGNER</div>
+    </div>
+    <div class="container__image--second"></div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'MyComponent',
+  data() {
+    return {
+      animateOnLoad: null,
+      imageUrls: ["/img/different/face7.svg", "/img/different/face5.svg"],
+      currentImageIndex: 0,
+    };
+  },
+  computed: {
+    currentImageUrl() {
+      return this.imageUrls[this.currentImageIndex];
+    },
+  },
+  mounted() {
+    this.animateOnLoad = true;
+
+    // After a delay, reset the animation to allow hover interaction
+    setTimeout(() => {
+      this.animateOnLoad = null;
+    }, 5000);
+
+    // Interval to switch images
+    setInterval(() => {
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.imageUrls.length;
+    }, 3000); // Adjust the interval as needed
+  },
+  watch: {
+    currentImageIndex(newIndex) {
+      // You can perform additional logic here if needed
+      console.log("currentImageIndex changed:", newIndex);
+    },
+  },
+};
+</script>
 
