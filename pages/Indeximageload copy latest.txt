@@ -32,9 +32,8 @@ body {
   height: 500px;
   border-radius: 50%;
   background: url("{{ currentImageUrl }}") center/cover;
-  transition: ease-in-out 0.3s opacity; /* Updated transition property */
+  transition: ease-in-out 0.3s;
   z-index: 2;
-  opacity: 0; /* Set initial opacity to 0 */
 
   &:before {
     content: '';
@@ -56,7 +55,12 @@ body {
     z-index: -1;
   }
 
-  .containerinfoa,
+  .containerinfoa {
+    position: relative;
+    line-height: 1.8;
+    transition: ease-in-out 0.3s;
+    opacity: 0;
+  }
   .containerinfob {
     position: relative;
     line-height: 1.8;
@@ -91,21 +95,15 @@ body {
       opacity: 1;
     }
   }
-
-  &.fade-in {
-    opacity: 1; /* Set opacity to 1 on image switch */
-  }
 }
-</style>
+
+
+</style> 
+
 
 <template>
   <div class="container">
-    <div
-      ref="imageContainer"
-      class="container__image"
-      :class="{ 'start-animation': animateOnLoad, 'fade-in': animateOnSwitch }"
-      :style="{ background: 'url(' + currentImageUrl + ') center/cover' }"
-    >
+    <div class="container__image" :class="{ 'start-animation': animateOnLoad }" :style="{ background: 'url(' + currentImageUrl + ') center/cover' }">
       <div class="containerinfoa container__author">DEVELOPER</div>
       <div class="containerinfob container__location">DESIGNER</div>
     </div>
@@ -119,8 +117,7 @@ export default {
   data() {
     return {
       animateOnLoad: null,
-      animateOnSwitch: false, // New property to control fade-in class
-      imageUrls: ["/img/different/face7.svg", "/img/different/face5.svg", "/img/different/face4.svg"],
+      imageUrls: ["/img/different/face7.svg", "/img/different/face5.svg"],
       currentImageIndex: 0,
     };
   },
@@ -139,12 +136,7 @@ export default {
 
     // Interval to switch images
     setInterval(() => {
-      this.animateOnSwitch = true; // Trigger fade-in animation
-      // Wait for the transition to complete and then switch the image
-      setTimeout(() => {
-        this.currentImageIndex = (this.currentImageIndex + 1) % this.imageUrls.length;
-        this.animateOnSwitch = false; // Reset fade-in animation
-      }, 5000); // Adjust the delay as needed
+      this.currentImageIndex = (this.currentImageIndex + 1) % this.imageUrls.length;
     }, 3000); // Adjust the interval as needed
   },
   watch: {
