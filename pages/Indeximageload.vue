@@ -1,150 +1,120 @@
 <style>
-* {
-  box-sizing: border-box;
-}
-
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  background-color: #ffffff;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.container__image {
+.hero {
+  display: grid;
   position: relative;
+  grid-template-columns: 100vw;
+  grid-template-rows: 100vh;
+  place-items: center;
+  overflow: hidden;
+  animation: clip-hero-anim 1.25s cubic-bezier(0.29, 0.8, 0.8, 0.98);
+  will-change: clip-path;
+}
+
+.hero__bg {
+  align-self: center;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.hero__bg {
+  display: grid;
+  position: relative;
+  z-index: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  animation: fade-in 0.75s linear;
+  will-change: opacity;
+}
+
+.hero__bg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 5;
+  top: -10%;
+  right: -10%;
+  bottom: -10%;
+  left: -10%;
+  background: rgba(#29042f, 0.4);
+  background-blend-mode: screen;
+}
+
+.hero__bg picture {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: url("{{ currentImageUrl }}") center/cover;
-  transition: ease-in-out 0.3s;
-  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  animation: scaling-hero-anim 4s 0.25s cubic-bezier(0, 0.71, 0.4, 0.97) forwards;
+  will-change: transform;
+}
 
-  &:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    background: inherit;
-    background-position: bottom;
-    filter: blur(40px) saturate(0%);
-    transform: scaleX(0.4);
-    transition: ease-in-out 0.4s;
-    border-radius: 120px;
-    transform-origin: right;
-    opacity: 0;
-    z-index: -1;
+.hero__bg img {
+  display: block;
+  object-fit: cover;
+  object-position: 77% 50%;
+  height: auto;
+  width: 100%;
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
   }
-
-  .containerinfoa {
-    position: relative;
-    line-height: 1.8;
-    transition: ease-in-out 0.3s;
-    opacity: 0;
-  }
-  .containerinfob {
-    position: relative;
-    line-height: 1.8;
-    transition: ease-in-out 0.3s;
-    opacity: 0;
-  }
-
-  .container__location {
-    transition-delay: 0.15s;
-  }
-
-  &:hover {
-    border-radius: 0;
-    width: 450px;
-    height: 310px;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(9, 55, 53, 0.08),
-      0 16px 24px rgba(9, 55, 53, 0.1), 0 24px 32px rgba(9, 55, 53, 0.14);
-
-    &:before {
-      width: 100%;
-      opacity: 0.18;
-      filter: blur(10px) saturate(100%);
-      transform: scale(2.8) translate3d(-18%, 0, 0);
-    }
-
-    .containerinfoa {
-      transform: translate3d(80%, 0, 0);
+  to {
       opacity: 1;
-    }
-    .containerinfob {
-      transform: translate3d(10%, 0, 0);
-      opacity: 1;
-    }
   }
 }
 
+@keyframes scaling-hero-anim {
+  from {
+      transform: scale(1.25);
+  }
+  to {
+      transform: scale(1.1);
+  }
+}
+
+@keyframes clip-hero-anim {
+  from {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 50% 100%);
+  }
+  to {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
 
 </style> 
 
 
 <template>
   <div class="container">
-    <div class="container__image" :class="{ 'start-animation': animateOnLoad }" :style="{ background: 'url(' + currentImageUrl + ') center/cover' }">
-      <div class="containerinfoa container__author">DEVELOPER</div>
-      <div class="containerinfob container__location">DESIGNER</div>
+    <div class="hero">
+      <div class="hero__bg">
+        <picture>
+          <img src="/img/different/face7.svg">
+        </picture>
+      </div>
+
     </div>
-    <div class="container__image--second"></div>
+    <div class="hero">
+      <div class="hero__bg">
+        <picture>
+          <img src="/img/different/face5.svg">
+        </picture>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MyComponent',
-  data() {
-    return {
-      animateOnLoad: null,
-      imageUrls: ["/img/different/face7.svg", "/img/different/face5.svg"],
-      currentImageIndex: 0,
-    };
-  },
-  computed: {
-    currentImageUrl() {
-      return this.imageUrls[this.currentImageIndex];
-    },
-  },
-  mounted() {
-    this.animateOnLoad = true;
+  name: 'MyComponent'}
 
-    // After a delay, reset the animation to allow hover interaction
-    setTimeout(() => {
-      this.animateOnLoad = null;
-    }, 5000);
-
-    // Interval to switch images
-    setInterval(() => {
-      this.currentImageIndex = (this.currentImageIndex + 1) % this.imageUrls.length;
-    }, 3000); // Adjust the interval as needed
-  },
-  watch: {
-    currentImageIndex(newIndex) {
-      // You can perform additional logic here if needed
-      console.log("currentImageIndex changed:", newIndex);
-    },
-  },
-};
 </script>
 
