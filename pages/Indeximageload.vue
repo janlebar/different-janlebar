@@ -121,7 +121,7 @@ body {
   <div class="hero">
     <div class="hero__bg">
       <picture>
-        <img src="https://images.unsplash.com/photo-1491982883790-ead7c97a047e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2594&q=80">
+        <img src="/img/different/face7.svg">
       </picture>
     </div>
   
