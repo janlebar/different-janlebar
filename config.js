@@ -1,3 +1,3 @@
 export default {
-    email: 'example@example.com',
+    email: 'janstefanlebar@gmail.com',
   };

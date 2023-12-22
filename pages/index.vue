@@ -62,6 +62,7 @@ export default {
     
       
       <div class="container mx-auto">
+        <p class="text-lg font-semibold sm:text-xl text-gray-600 mt-4">Presenting two latest web apps:</p>
         <Footerprojects :customClass="customClassFromParent" :description="description" />
       </div>      
       <section>
