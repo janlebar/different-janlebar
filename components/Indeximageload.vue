@@ -40,9 +40,8 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 90vh;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  height: 50vh;
+  font-size: 24px;
 
 
 }
@@ -107,24 +106,20 @@ export default {
 
   &:hover {
     border-radius: 0;
-    width: 450px;
-    height: 310px;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(9, 55, 53, 0.08),
-      0 16px 24px rgba(9, 55, 53, 0.1), 0 24px 32px rgba(9, 55, 53, 0.14);
+    width: 50%;
+    height: 80%;
+
 
     &:before {
-      width: 100%;
-      opacity: 0.18;
-      filter: blur(10px) saturate(100%);
-      transform: scale(2.8) translate3d(-18%, 0, 0);
+
     }
 
     .containerinfoa {
-      transform: translate3d(80%, 0, 0);
+      transform: translate3d(70%, 0, 0);
       opacity: 1;
     }
     .containerinfob {
-      transform: translate3d(10%, 0, 0);
+      transform: translate3d(25%, 0, 0);
       opacity: 1;
     }
   }
