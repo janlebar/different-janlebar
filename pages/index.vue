@@ -2,6 +2,7 @@
 import Header from '~/components/Header.vue'
 import projects from '~/components/Footer.vue';
 import Footerprojects from '~/components/Footerprojects.vue';
+import GitHubRepo from '~/components/GitHubRepo.vue';
 // import Indeximageload from '~/components/Indeximageload.vue'
 
 
@@ -10,6 +11,7 @@ export default {
     Header,
     projects,
     Footerprojects,
+    GitHubRepo,
   },
   data() {
     return {
@@ -18,6 +20,8 @@ export default {
     };
   },
 };
+
+
 
 
 
@@ -60,7 +64,12 @@ export default {
         <Indeximageload></Indeximageload>
     </section>
     
-      
+    <section>
+    <div class="container mx-auto">
+      <!-- <GitHubRepo :owner="$route.params.owner" :repo="$route.params.repo" /> -->
+    </div>
+    </section>  
+
       <div class="container mx-auto">
         <p class="text-lg font-semibold sm:text-xl text-gray-600 mt-4">Presenting two latest web apps:</p>
         <Footerprojects :customClass="customClassFromParent" :description="description" />
