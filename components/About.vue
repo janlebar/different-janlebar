@@ -47,7 +47,7 @@ export default {
 	<div class="flex justify-center sm:flex-block">
 		<a
 		  download="Stoman-Resume.pdf"
-		  href="/files/JanLebarCV.pdf"
+		  href="/files/Cirriculum Vitae Jan Lebar en.pdf"
 		  class="w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-300 flex items-center justify-center"
 		  aria-label="Download Resume"
 		>
