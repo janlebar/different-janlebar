@@ -1,48 +1,66 @@
-<!-- components/GitHubRepo.vue -->
-
 <template>
-  <div>
-    <h1 v-if="repo">{{ repo.name }}</h1>
-    <p v-if="repo">{{ repo.description }}</p>
-    <p v-if="repo">Stars: {{ repo.stargazers_count }}</p>
-    <p v-if="repo">Forks: {{ repo.forks_count }}</p>
-    <!-- Add more details as needed -->
-    <p v-if="!repo">Repository not found</p>
+  <div class="mb-6">
+    <section class="hero is-medium is-primary is-bold mb-6">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title"> GitHub Repositories</h1>
+          
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="table-container">
+        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>URL</th>
+              <th>Language</th>
+              <th>Login</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="repo in repos" v-bind:key="repo.id">
+              <td>{{ repo.id }}</td>
+              <td>{{ repo.name }}</td>
+              <td>{{ repo.html_url }}</td>
+              <td>{{ repo.language }}</td>
+              <td>{{ repo.owner.login }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
-  async asyncData({ params, $http }) {
-    try {
-      // Set your GitHub API token
-      const githubToken = 'YOUR_GITHUB_TOKEN';
-
-      // Include the token in the request headers
-      const response = await $http.get(`https://api.github.com/repos/${params.owner}/${params.repo}`, {
-        headers: {
-          Authorization: `Bearer ${githubToken}`,
-        },
-      });
-
-      // Check if the response status is 404 (Not Found)
-      if (response.status === 404) {
-        console.log('Repository not found:', params.owner, params.repo);
-        return {
-          repo: null,
-        };
-      }
-
-      return {
-        repo: response.data,
-      };
-    } catch (error) {
-      console.error('Error fetching GitHub repository:', error);
-      return {
-        repo: null,
-      };
-    }
+  name: "Repository",
+  data() {
+    return {
+      repos: null,
+    };
+  },
+  created: function () {
+    axios.get("https://api.github.com/users/janlebar/repos").then((response) => {
+      this.repos = response.data;
+    });
   },
 };
 </script>
+
+<style>
+body {
+  font: 15px/1.8 "Poppins", sans-serif !important;
+}
+
+.table td,
+.table th {
+  padding: 20px !important;
+}
+</style>
 

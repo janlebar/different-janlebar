@@ -66,6 +66,7 @@ export default {
     
     <section>
     <div class="container mx-auto">
+            <!-- <GitHubRepo /> -->
       <!-- <GitHubRepo :owner="$route.params.owner" :repo="$route.params.repo" /> -->
     </div>
     </section>  
