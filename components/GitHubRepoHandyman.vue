@@ -3,8 +3,7 @@
     <section class="hero is-medium is-primary is-bold mb-6">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title"> GitHub Repositories</h1>
-          
+          <h2 class="title is-4 mt-4">GitHub Repository: Hanyman Connect</h2>
         </div>
       </div>
     </section>
@@ -16,17 +15,15 @@
               <th>ID</th>
               <th>Name</th>
               <th>URL</th>
-              <th>Language</th>
-              <th>Login</th>
+              <th>Last Updated</th>
             </tr>
           </thead>
           <tbody>
-            <tr v-for="repo in repos" v-bind:key="repo.id">
+            <tr v-for="repo in repos" :key="repo.id">
               <td>{{ repo.id }}</td>
               <td>{{ repo.name }}</td>
               <td>{{ repo.html_url }}</td>
-              <td>{{ repo.language }}</td>
-              <td>{{ repo.owner.login }}</td>
+              <td>{{ formatDate(repo.updated_at) }}</td>
             </tr>
           </tbody>
         </table>
@@ -46,9 +43,20 @@ export default {
     };
   },
   created: function () {
-    axios.get("https://api.github.com/users/janlebar/repos").then((response) => {
-      this.repos = response.data;
+    axios.get("https://api.github.com/repos/janlebar/hanyman-connect").then(async (response) => {
+      this.repos = [response.data]; // Wrap the response in an array, as we are now dealing with a single repository
+
+      // Fetch the content of each file in the repository
+      for (const repo of this.repos) {
+        repo.files = await this.fetchFiles(repo.contents_url);
+      }
     });
+  },
+  methods: {
+    formatDate(dateString) {
+      const options = { year: "numeric", month: "short", day: "numeric" };
+      return new Date(dateString).toLocaleDateString(undefined, options);
+    },
   },
 };
 </script>
@@ -63,4 +71,5 @@ body {
   padding: 20px !important;
 }
 </style>
+
 

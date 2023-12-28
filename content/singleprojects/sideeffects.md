@@ -6,7 +6,7 @@ image:
   - /img/sideeffects/sideeffect.svg
   - /img/sideeffects/Sideeffects-Web1.svg
   - /img/sideeffects/Sideeffects-Web2.svg
-  - /img/sideeffects/republicofart5.svg
+
 ---
 <br>
 

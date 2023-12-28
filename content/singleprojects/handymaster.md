@@ -5,8 +5,7 @@ image:
   - /img/handymaster/handymaster.svg
   - /img/handymaster/handymaster2.svg
   - /img/handymaster/handymaster3.svg
-  - /img/handymaster/handymaster4.svg
-  - /img/handymaster/handymaster5.svg
+
 ---
 <br>
 
