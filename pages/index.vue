@@ -12,8 +12,7 @@ export default {
     Header,
     projects,
     Footerprojects,
-    GitHubRepoHandyman,
-    GitHubRepoSideeffects,
+
   },
   data() {
     return {
