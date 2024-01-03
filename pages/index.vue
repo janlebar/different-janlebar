@@ -64,13 +64,13 @@ export default {
       </section>
       <br>
       <br>
-      <section class="flex">
+      <!-- <section class="flex">
         <div class="container mx-auto flex">
           <GitHubRepoHandyman class="mr-12" />
-          <GitHubRepoSideeffects class="ml-12" />
+          <GitHubRepoSideeffects class="ml-12" /> -->
             <!-- <GitHubRepo :owner="$route.params.owner" :repo="$route.params.repo" /> -->
-        </div>
-    </section>
+        <!-- </div>
+    </section> -->
     
       <div class="container mx-auto pt-20">
         <p class="text-lg font-semibold sm:text-xl text-gray-600 mt-4">Presenting three random projects:</p>

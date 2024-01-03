@@ -44,21 +44,21 @@ export default {
       }
     };
   },
-  // methods: {
-  //   submitForm() {
-  //     // Create a mailto link with the specified email address and form data
-  //     const mailtoLink = `mailto:${config.email}?subject=${encodeURIComponent('Contact Form Submission')}&body=${encodeURIComponent(`Name: ${this.formData.name}\nEmail: ${this.formData.email}\nMessage: ${this.formData.message}`)}`;
+  methods: {
+    submitForm() {
+      // Create a mailto link with the specified email address and form data
+      const mailtoLink = `mailto:${config.email}?subject=${encodeURIComponent('Contact Form Submission')}&body=${encodeURIComponent(`Name: ${this.formData.name}\nEmail: ${this.formData.email}\nMessage: ${this.formData.message}`)}`;
 
-  //     // Open the default mail client with the mailto link
-  //     window.open(mailtoLink);
+      // Open the default mail client with the mailto link
+      window.open(mailtoLink);
 
-  //     // Optionally, you can reset the form data after submission
-  //     this.formData = {
-  //       name: '',
-  //       email: '',
-  //       message: ''
-  //     };
-  //   }
-  // }
+      // Optionally, you can reset the form data after submission
+      this.formData = {
+        name: '',
+        email: '',
+        message: ''
+      };
+    }
+  }
 };
 </script>
