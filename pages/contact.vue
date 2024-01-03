@@ -9,15 +9,15 @@
           <form @submit.prevent="submitForm">
             <div class="mb-4">
               <label for="name" class="block text-lg text-gray-600">Name</label>
-              <input type="text" id="name" v-model="formData.name" required class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              <input type="text" id="name" v-model.trim="formData.name" required class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
             <div class="mb-4">
               <label for="email" class="block text-lg text-gray-600">Email</label>
-              <input type="email" id="email" v-model="formData.email" required class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+              <input type="email" id="email" v-model.trim="formData.email" required class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" />
             </div>
             <div class="mb-4">
               <label for="message" class="block text-lg text-gray-600">Message</label>
-              <textarea id="message" v-model="formData.message" rows="4" required class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+              <textarea id="message" v-model.trim="formData.message" rows="4" required class="w-full py-2 px-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
             </div>
             <button type="submit" class="bg-blue-500 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded transition duration-300 ease-in-out">Submit</button>
           </form>
@@ -32,6 +32,9 @@ import Header from '@/components/Header.vue';
 import config from '@/config';
 
 export default {
+  components: {
+    Header
+  },
   data() {
     return {
       formData: {
@@ -59,4 +62,5 @@ export default {
   }
 };
 </script>
+
 
