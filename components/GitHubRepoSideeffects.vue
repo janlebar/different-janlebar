@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="mb-6">
     <section class="hero is-medium is-primary is-bold mb-6">
       <div class="hero-body">
@@ -70,4 +70,4 @@ body {
 .table th {
   padding: 20px !important;
 }
-</style>
+</style> -->
