@@ -2,8 +2,7 @@
 import Header from '~/components/Header.vue'
 import projects from '~/components/Footer.vue';
 import Footerprojects from '~/components/Footerprojects.vue';
-import GitHubRepoHandyman from '~/components/GitHubRepoHandyman.vue';
-import GitHubRepoSideeffects from '~/components/GitHubRepoSideeffects.vue';
+
 // import Indeximageload from '~/components/Indeximageload.vue'
 
 
