@@ -49,7 +49,7 @@ export default {
       <section>
         <Indeximageload></Indeximageload>
     </section>
-      <div class="container mx-auto">
+      <div class="container mx-auto mt-10">
         <p class="text-lg font-semibold sm:text-xl text-gray-600 mt-4">Presenting two latest web apps:</p>
         <Footerprojects :customClass="customClassFromParent" :description="description" />
       </div> 
